@@ -283,17 +283,6 @@ public extension UIEdgeInsets {
 	init(top: CGFloat? = nil, left: CGFloat? = nil, bottom: CGFloat? = nil, right: CGFloat? = nil) {
 		self.init(top: top ?? 0, left: left ?? 0, bottom: bottom ?? 0, right: right ?? 0)
 	}
-	
-	init(_ inset: CGFloat) {
-		self.init(top: inset, left: inset, bottom: inset, right: inset)
-	}
-}
-
-public extension CGRect {
-
-	func inset(by insets: UIEdgeInsets) -> CGRect {
-		return self.inset(by: insets)
-	}
 }
 
 public extension UIView {
